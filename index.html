@@ -84,6 +84,65 @@
       color: #a78bfa;
     }
 
+    .product {
+      margin-left: 20px;
+      margin-top: 12px;
+    }
+
+    .product-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 12px;
+    }
+
+    .product-icon {
+      border-radius: 9px;
+    }
+
+    .product-name {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .product-meta {
+      color: #9ca3af;
+      font-size: 13px;
+    }
+
+    .product-desc {
+      margin-top: 8px;
+      color: #d4d4d4;
+    }
+
+    .product-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .btn {
+      padding: 4px 14px;
+      border: 1px solid #4ade80;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: rgba(74, 222, 128, 0.12);
+      text-decoration: none;
+    }
+
+    .btn-ghost {
+      border-color: #3f3f46;
+      color: #e5e5e5;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+
     @media (max-width: 600px) {
       .container {
         margin: 40px auto;
@@ -106,9 +165,33 @@
 
         <div class="item">Dart / Flutter</div>
 
-        <div class="item">ReactNative</div>
+        <div class="item">JavaScript / TypeScript</div>
+
+        <div class="item">PHP / Laravel</div>
 
         <div class="item">Swift / Java</div>
+      </div>
+
+      <div class="section">
+        <div class="command">$ cat products.txt</div>
+
+        <div class="product">
+          <div class="product-head">
+            <img class="product-icon" src="https://raw.githubusercontent.com/mkosei/deskroid/main/build/icon.png" alt="" width="40" height="40">
+            <a href="https://github.com/mkosei/deskroid" class="project-title product-name">Deskroid</a>
+            <span class="product-meta">Windows / macOS · MIT</span>
+          </div>
+          <div class="product-desc">
+            A talking character that lives on your desktop. Chat by text or voice with Live2D / 3D (VRM) characters.
+            Everything runs locally with Ollama, so no API keys or fees. English and Japanese.
+          </div>
+          <div class="product-links">
+            <a class="btn" href="https://github.com/mkosei/deskroid/releases/latest/download/Deskroid-Setup.exe">↓ Windows</a>
+            <a class="btn" href="https://github.com/mkosei/deskroid/releases/latest/download/Deskroid-arm64.dmg">↓ Mac (Apple silicon)</a>
+            <a class="btn" href="https://github.com/mkosei/deskroid/releases/latest/download/Deskroid-x64.dmg">↓ Mac (Intel)</a>
+            <a class="btn btn-ghost" href="https://github.com/mkosei/deskroid">GitHub →</a>
+          </div>
+        </div>
       </div>
 
       <div class="section links">
